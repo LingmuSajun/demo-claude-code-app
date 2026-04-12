@@ -47,6 +47,18 @@ docker compose up --build
 | PATCH   | /todos/:id   | 更新（ボディ: `{title?, done?}`）  |
 | DELETE  | /todos/:id   | 削除                              |
 
+## WSL 環境での注意事項
+
+画像ファイル（スクリーンショット等）を Claude Code に渡す場合、WSL パスで指定してください。
+
+Windows のスクリーンショット（Win+Shift+S や PrintScreen で保存されるもの）は以下に保存されます。
+
+```
+/mnt/c/Users/wuwei/Pictures/Screenshots/
+```
+
+最新のスクリーンショットを参照したい場合は、上記ディレクトリ内の最新ファイルのパスを伝えてください。
+
 ## 環境変数
 
 | 変数名     | デフォルト | 説明                      |
